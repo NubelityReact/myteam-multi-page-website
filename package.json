@@ -1,0 +1,21 @@
+{
+  "name": "myteam-multi-page-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/NubelityReact/myteam-multi-page-website.git",
+  "author": "Valentín González <v.gonzalez@nubelity.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"live-server src/ \"  \"sass -w src/styles/main.scss src/styles/index.css\"",
+    "hooks:install" : "husky install"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "eslint": "^8.35.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "live-server": "^1.2.2",
+    "prettier": "^2.8.4",
+    "sass": "^1.58.3"
+  }
+}
