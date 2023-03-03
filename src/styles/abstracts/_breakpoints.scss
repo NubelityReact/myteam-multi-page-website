@@ -1,0 +1,21 @@
+$breakpoints: (
+  "mobile": (
+    min-width: 375px,
+  ),
+  "tablet": (
+    min-width: 768px,
+  ),
+  "desktop": (
+    min-width: 1440px,
+  ),
+);
+
+@mixin respond-to($name) {
+  @if map-has-key($breakpoints, $name) {
+    @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  } @else {
+    @warn "The name of the breakpoint provided doesn't exists, please verify the name";
+  }
+}
