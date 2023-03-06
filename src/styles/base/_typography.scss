@@ -27,12 +27,15 @@ $weights: (
 
 @mixin h1-small {
   @include headers(6.4rem, 5.6rem);
+  @include respond-to("mobile") {
+    @include headers(4.5rem, 4.5rem);
+  }
 }
 
 @mixin h2 {
   @include headers(4.8rem, 4.8rem);
   @include respond-to("mobile") {
-    @include headers(3.2rem, 3.2rem);
+    @include headers(3.8rem, 3.8rem);
   }
 }
 

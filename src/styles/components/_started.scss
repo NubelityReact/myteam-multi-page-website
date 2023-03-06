@@ -1,0 +1,20 @@
+.started {
+  background-color: $light-coral;
+  display: flex;
+  flex-direction: column;
+  padding: 10em 10% 15em;
+  position: relative;
+  overflow: hidden;
+
+  .started-section__title {
+    @include h2;
+    text-align: center;
+    color: $sacramento-state-green;
+  }
+
+  .started__bg-pattern-home-6-about-5 {
+    position: absolute;
+    bottom: -2em;
+    left: 0;
+  }
+}
