@@ -1,0 +1,42 @@
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  position: relative;
+
+  .story__quotes {
+    position: absolute;
+    top: -3em;
+    z-index: 1;
+  }
+
+  .story__content {
+    position: relative;
+    z-index: 2;
+    .story__description {
+      @include body1;
+      color: $white;
+    }
+    .story__title {
+      @include h3;
+      color: $rapture-blue;
+      margin-bottom: 0.4rem;
+      margin-top: 1.5rem;
+    }
+
+    .story__subtitle {
+      @include body2;
+      color: $white;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    .story__photo {
+      width: 20%;
+      border-radius: 100%;
+      border: 3px solid $white;
+    }
+  }
+}

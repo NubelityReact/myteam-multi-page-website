@@ -11,6 +11,8 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="./styles/index.css" />
+
     <title>Frontend Mentor | myteam website challenge - Homepage</title>
   </head>
   <body>
@@ -21,102 +23,252 @@
   -->
 
     <main>
-      <header>
-        <h1>
-          Find the <br />
-          best <span>talent</span>
-        </h1>
+      <header class="home-banner">
+        <div class="home-banner__content">
+          <h1 class="home-banner__title">
+            Find the <br />
+            best <span class="span-light-coral">talent</span>
+          </h1>
 
-        <p>
-          Finding the right people and building high performing teams can be
-          hard. Most companies aren’t tapping into the abundance of global
-          talent. We’re about to change that.
-        </p>
+          <p class="home-banner__text">
+            Finding the right people and building high performing teams can be
+            hard. Most companies aren’t tapping into the abundance of global
+            talent. We’re about to change that.
+          </p>
+        </div>
+        <svg
+          class="home-banner__bg-pattern-home-2"
+          xmlns="http://www.w3.org/2000/svg"
+          width="358"
+          height="100"
+        >
+          <g fill="none" fill-rule="evenodd">
+            <circle cx="100" cy="100" r="100" fill="#2C6269" />
+            <path
+              fill="#012F34"
+              d="M258 0c55.228 0 100 44.772 100 100s-44.772 100-100 100-100-44.772-100-100S202.772 0 258 0zm0 67c-18.225 0-33 14.775-33 33s14.775 33 33 33 33-14.775 33-33-14.775-33-33-33z"
+            />
+            <path fill="#79C8C7" d="M358 43h-43V0h43z" />
+            <path
+              fill="#F67E7E"
+              d="M233.514 0c55.228 0 100 44.772 100 100s-44.772 100-100 100c-55.229 0-100-44.772-100-100s44.771-100 100-100zm0 67c-18.226 0-33 14.775-33 33s14.774 33 33 33c18.225 0 33-14.775 33-33s-14.775-33-33-33z"
+            />
+            <path
+              fill="#79C8C7"
+              d="M100 40v4H0v-4h100zm0-8v4H0v-4h100zm0-8v4H0v-4h100zm0-8v4H0v-4h100zm0-8v4H0V8h100zm0-8v4H0V0h100z"
+            />
+          </g>
+        </svg>
       </header>
 
-      <section>
-        <h2>Build & manage distributed teams like no one else.</h2>
+      <section class="features-section">
+        <div class="features-section__title-contain">
+          <div class="features-section__title-border"></div>
+          <h2 class="features-section__title">
+            Build & manage distributed teams like no one else.
+          </h2>
+        </div>
 
-        <ul>
-          <li>
-            <div>
-              <img src="" alt="Icon of People with Experience" />
-            </div>
-            <div>
-              <h5>Experienced Individuals</h5>
-              <p>
-                Our network is made up of highly experienced professionals who
-                are passionate about what they do.
-              </p>
-            </div>
+        <ul class="features-section__list">
+          <li class="features-section__item">
+            <section class="feature">
+              <div class="feature__icon">
+                <img
+                  src="./assets/icon-person.svg"
+                  class="feature__icon"
+                  alt="Icon of People with Experience"
+                />
+              </div>
+              <div class="feature__content">
+                <h3 class="feature__title">Experienced Individuals</h3>
+                <p class="feature__description">
+                  Our network is made up of highly experienced professionals who
+                  are passionate about what they do.
+                </p>
+              </div>
+            </section>
           </li>
-          <li>
-            <div>
-              <img src="" alt="Icon of Easy to Implement" />
-            </div>
-            <div>
-              <h5>Easy to Implement</h5>
-              <p>
-                Our processes have been refined over years of implementation
-                meaning our teams always deliver.
-              </p>
-            </div>
+          <li class="features-section__item">
+            <section class="feature">
+              <div class="feature__icon">
+                <img
+                  src="./assets/icon-cog.svg"
+                  alt="Icon of Easy to Implement"
+                />
+              </div>
+              <div class="feature__content">
+                <h3 class="feature__title">Easy to Implement</h3>
+                <p class="feature__description">
+                  Our processes have been refined over years of implementation
+                  meaning our teams always deliver.
+                </p>
+              </div>
+            </section>
           </li>
-          <li>
-            <div>
-              <img src="" alt="Icon of Enhanced Productivity" />
-            </div>
-            <div>
-              <h5>Enhanced Productivity</h5>
-              <p>
-                Our customized platform with in-built analytics helps you manage
-                your distributed teams.
-              </p>
-            </div>
+          <li class="features-section__item">
+            <section class="feature">
+              <div class="feature__icon">
+                <img
+                  src="./assets/icon-chart.svg"
+                  alt="Icon of Enhanced Productivity"
+                />
+              </div>
+              <div class="feature__content">
+                <h3 class="feature__title">Enhanced Productivity</h3>
+                <p class="feature__description">
+                  Our customized platform with in-built analytics helps you
+                  manage your distributed teams.
+                </p>
+              </div>
+            </section>
           </li>
         </ul>
+
+        <svg
+          class="features-section__bg-pattern-home-3"
+          xmlns="http://www.w3.org/2000/svg"
+          width="200"
+          height="244"
+        >
+          <g fill="none" fill-rule="evenodd">
+            <path fill="#2C6269" d="M100 144H0V44h100z" />
+            <path
+              fill="#014E56"
+              d="M100 44c55.228 0 100 44.772 100 100s-44.772 100-100 100S0 199.228 0 144 44.772 44 100 44zm0 67c-18.225 0-33 14.775-33 33s14.775 33 33 33 33-14.775 33-33-14.775-33-33-33z"
+            />
+            <path
+              fill="#79C8C7"
+              d="M100 184v4H0v-4h100zm0-8v4H0v-4h100zm0-8v4H0v-4h100zm0-8v4H0v-4h100zm0-8v4H0v-4h100zm0-8v4H0v-4h100zM4 40v4H0v-4h4zm7 0v4H7v-4h4zm7 0v4h-4v-4h4zm7 0v4h-4v-4h4zm7 0v4h-4v-4h4zm7 0v4h-4v-4h4zm7 0v4h-4v-4h4zm7 0v4h-4v-4h4zM4 32v4H0v-4h4zm7 0v4H7v-4h4zm7 0v4h-4v-4h4zm7 0v4h-4v-4h4zm7 0v4h-4v-4h4zm7 0v4h-4v-4h4zm7 0v4h-4v-4h4zm7 0v4h-4v-4h4zM4 24v4H0v-4h4zm7 0v4H7v-4h4zm7 0v4h-4v-4h4zm7 0v4h-4v-4h4zm7 0v4h-4v-4h4zm7 0v4h-4v-4h4zm7 0v4h-4v-4h4zm7 0v4h-4v-4h4zm-35-8v4h-4v-4h4zm14 0v4h-4v-4h4zm-7 0v4h-4v-4h4zm21 0v4h-4v-4h4zm-7 0v4h-4v-4h4zM4 16v4H0v-4h4zm7 0v4H7v-4h4zm42 0v4h-4v-4h4zM4 8v4H0V8h4zm7 0v4H7V8h4zm7 0v4h-4V8h4zm7 0v4h-4V8h4zm7 0v4h-4V8h4zm7 0v4h-4V8h4zm7 0v4h-4V8h4zm7 0v4h-4V8h4zM4 0v4H0V0h4zm7 0v4H7V0h4zm7 0v4h-4V0h4zm7 0v4h-4V0h4zm7 0v4h-4V0h4zm7 0v4h-4V0h4zm7 0v4h-4V0h4zm7 0v4h-4V0h4z"
+            />
+          </g>
+        </svg>
       </section>
 
-      <section>
-        <h2>
+      <section class="stories-section">
+        <h2 class="stories-section__title">
           Delivering real results for top <br />
-          companies. Some of our <span>success stories</span>.
+          companies. Some of our
+          <span class="span-light-coral">success stories</span>.
         </h2>
 
-        <div>
-          <section>
-            <p>
-              “The team perfectly fit the specialized skill set required. They
-              focused on the most essential features helping us launch the
-              platform eight months faster than planned.”
-            </p>
-            <h5>Kady Baker</h5>
-            <h6>Product Manager at Bookmark</h6>
-            <img src="" alt="Photo by Kady Baker" />
+        <div class="stories-section__list">
+          <section class="story stories-section__story">
+            <svg
+              class="story__quotes"
+              xmlns="http://www.w3.org/2000/svg"
+              width="67"
+              height="56"
+            >
+              <path
+                fill="#2C6269"
+                d="M51.273 56c4.638 0 8.368-1.322 11.19-3.967 2.823-2.645 4.235-5.799 4.235-9.46 0-2.95-.429-5.494-1.286-7.63a197.251 197.251 0 01-2.495-6.562c-.806-2.237-1.21-4.933-1.21-8.087 0-2.746.454-5.798 1.361-9.155C63.976 7.782 65.286 4.069 67 0H55.356c-3.73 3.662-7.032 7.833-9.905 12.512-2.873 4.68-5.166 9.359-6.88 14.038C36.857 31.23 36 35.4 36 39.063c0 5.391 1.361 9.562 4.083 12.512C42.805 54.525 46.535 56 51.273 56zm-36 0c4.638 0 8.368-1.322 11.19-3.967 2.823-2.645 4.235-5.799 4.235-9.46 0-2.95-.429-5.494-1.286-7.63a197.251 197.251 0 01-2.495-6.562c-.806-2.237-1.21-4.933-1.21-8.087 0-2.746.454-5.798 1.361-9.155C27.976 7.782 29.286 4.069 31 0H19.356c-3.73 3.662-7.032 7.833-9.905 12.512-2.873 4.68-5.166 9.359-6.88 14.038C.857 31.23 0 35.4 0 39.063c0 5.391 1.361 9.562 4.083 12.512C6.805 54.525 10.535 56 15.273 56z"
+              />
+            </svg>
+            <div class="story__content">
+              <p class="story__description">
+                “The team perfectly fit the specialized skill set required. They
+                focused on the most essential features helping us launch the
+                platform eight months faster than planned.”
+              </p>
+              <h3 class="story__title">Kady Baker</h3>
+              <h4 class="story__subtitle">Product Manager at Bookmark</h4>
+              <img
+                src="./assets/avatar-kady.jpg"
+                class="story__photo"
+                alt="Photo by Kady Baker"
+              />
+            </div>
           </section>
 
-          <section>
-            <p>
-              “We needed to automate our entire onboarding process. The team
-              came in and built out the whole journey. Since going live, user
-              retention has gone through the roof!”
-            </p>
-            <h5>Aiysha Reese</h5>
-            <h6>Founder of Manage</h6>
-            <img src="" alt="Photo by Aiysha Reese" />
+          <section class="story stories-section__story">
+            <svg
+              class="story__quotes"
+              xmlns="http://www.w3.org/2000/svg"
+              width="67"
+              height="56"
+            >
+              <path
+                fill="#2C6269"
+                d="M51.273 56c4.638 0 8.368-1.322 11.19-3.967 2.823-2.645 4.235-5.799 4.235-9.46 0-2.95-.429-5.494-1.286-7.63a197.251 197.251 0 01-2.495-6.562c-.806-2.237-1.21-4.933-1.21-8.087 0-2.746.454-5.798 1.361-9.155C63.976 7.782 65.286 4.069 67 0H55.356c-3.73 3.662-7.032 7.833-9.905 12.512-2.873 4.68-5.166 9.359-6.88 14.038C36.857 31.23 36 35.4 36 39.063c0 5.391 1.361 9.562 4.083 12.512C42.805 54.525 46.535 56 51.273 56zm-36 0c4.638 0 8.368-1.322 11.19-3.967 2.823-2.645 4.235-5.799 4.235-9.46 0-2.95-.429-5.494-1.286-7.63a197.251 197.251 0 01-2.495-6.562c-.806-2.237-1.21-4.933-1.21-8.087 0-2.746.454-5.798 1.361-9.155C27.976 7.782 29.286 4.069 31 0H19.356c-3.73 3.662-7.032 7.833-9.905 12.512-2.873 4.68-5.166 9.359-6.88 14.038C.857 31.23 0 35.4 0 39.063c0 5.391 1.361 9.562 4.083 12.512C6.805 54.525 10.535 56 15.273 56z"
+              />
+            </svg>
+            <div class="story__content">
+              <p class="story__description">
+                “We needed to automate our entire onboarding process. The team
+                came in and built out the whole journey. Since going live, user
+                retention has gone through the roof!”
+              </p>
+              <h3 class="story__title">Aiysha Reese</h3>
+              <h4 class="story__subtitle">Founder of Manage</h4>
+              <img
+                src="./assets/avatar-aiysha.jpg"
+                class="story__photo"
+                alt="Photo by Aiysha Reese"
+              />
+            </div>
           </section>
 
-          <section>
-            <p>
-              “Amazing. Our team helped us build an app that delivered a new
-              experience for hiring a physio. The launch was an instant success
-              with 100k downloads in the first month.”
-            </p>
-            <h5>Arthur Clarke</h5>
-            <h6>Co-founder of MyPhysio</h6>
-            <img src="" alt="Photo by Arthur Clarke" />
+          <section class="story stories-section__story">
+            <svg
+              class="story__quotes"
+              xmlns="http://www.w3.org/2000/svg"
+              width="67"
+              height="56"
+            >
+              <path
+                fill="#2C6269"
+                d="M51.273 56c4.638 0 8.368-1.322 11.19-3.967 2.823-2.645 4.235-5.799 4.235-9.46 0-2.95-.429-5.494-1.286-7.63a197.251 197.251 0 01-2.495-6.562c-.806-2.237-1.21-4.933-1.21-8.087 0-2.746.454-5.798 1.361-9.155C63.976 7.782 65.286 4.069 67 0H55.356c-3.73 3.662-7.032 7.833-9.905 12.512-2.873 4.68-5.166 9.359-6.88 14.038C36.857 31.23 36 35.4 36 39.063c0 5.391 1.361 9.562 4.083 12.512C42.805 54.525 46.535 56 51.273 56zm-36 0c4.638 0 8.368-1.322 11.19-3.967 2.823-2.645 4.235-5.799 4.235-9.46 0-2.95-.429-5.494-1.286-7.63a197.251 197.251 0 01-2.495-6.562c-.806-2.237-1.21-4.933-1.21-8.087 0-2.746.454-5.798 1.361-9.155C27.976 7.782 29.286 4.069 31 0H19.356c-3.73 3.662-7.032 7.833-9.905 12.512-2.873 4.68-5.166 9.359-6.88 14.038C.857 31.23 0 35.4 0 39.063c0 5.391 1.361 9.562 4.083 12.512C6.805 54.525 10.535 56 15.273 56z"
+              />
+            </svg>
+            <div class="story__content">
+              <p class="story__description">
+                “Amazing. Our team helped us build an app that delivered a new
+                experience for hiring a physio. The launch was an instant
+                success with 100k downloads in the first month.”
+              </p>
+              <h3 class="story__title">Arthur Clarke</h3>
+              <h4 class="story__subtitle">Co-founder of MyPhysio</h4>
+              <img
+                src="./assets/avatar-arthur.jpg"
+                class="story__photo"
+                alt="Photo by Arthur Clarke"
+              />
+            </div>
           </section>
         </div>
+
+        <svg
+          class="stories-section__bg-pattern-home-4-about-3"
+          xmlns="http://www.w3.org/2000/svg"
+          width="147"
+          height="100"
+        >
+          <g fill="none" fill-rule="evenodd">
+            <path fill="#002529" d="M0 100h100V0H0z" />
+            <path
+              fill="#79C8C7"
+              d="M47 96v4h100v-4H47zm0-8v4h100v-4H47zm0-8v4h100v-4H47zm0-8v4h100v-4H47zm0-8v4h100v-4H47zm0-8v4h100v-4H47z"
+            />
+          </g>
+        </svg>
+        <svg
+          class="stories-section__bg-pattern-home-5"
+          xmlns="http://www.w3.org/2000/svg"
+          width="200"
+          height="100"
+        >
+          <g fill="none" fill-rule="evenodd">
+            <path fill="#2C6269" d="M100 100h100V0H100z" />
+            <path
+              fill="#012F34"
+              d="M100 0C44.772 0 0 44.772 0 100s44.772 100 100 100 100-44.772 100-100S155.228 0 100 0zm0 67c18.225 0 33 14.775 33 33s-14.775 33-33 33-33-14.775-33-33 14.775-33 33-33z"
+            />
+            <path
+              fill="#79C8C7"
+              d="M100 96v4h100v-4H100zm0-8v4h100v-4H100zm0-8v4h100v-4H100zm0-8v4h100v-4H100zm0-8v4h100v-4H100zm0-8v4h100v-4H100z"
+            />
+          </g>
+        </svg>
       </section>
 
       <section>

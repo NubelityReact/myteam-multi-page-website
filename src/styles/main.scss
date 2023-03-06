@@ -8,4 +8,10 @@
 @import "./base/typography";
 
 //layout
-@import "./layout/footer";
+//@import "./layout/footer";
+
+// Components
+@import "./components/index.scss";
+
+// Pages
+@import "./pages/index.scss";
