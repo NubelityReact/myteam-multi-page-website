@@ -20,23 +20,14 @@ $weights: (
 
 @mixin h1-large {
   @include headers(10rem, 10rem);
-  @include respond-to("mobile") {
-    @include headers(5.2rem, 5.2rem);
-  }
 }
 
 @mixin h1-small {
   @include headers(6.4rem, 5.6rem);
-  @include respond-to("mobile") {
-    @include headers(4.5rem, 4.5rem);
-  }
 }
 
 @mixin h2 {
   @include headers(4.8rem, 4.8rem);
-  @include respond-to("mobile") {
-    @include headers(3.8rem, 3.8rem);
-  }
 }
 
 @mixin h3 {
@@ -45,14 +36,8 @@ $weights: (
 
 @mixin body1 {
   @include body(1.8rem, 2.8rem);
-  @include respond-to("mobile") {
-    @include body(1.5rem, 2.5rem);
-  }
 }
 
 @mixin body2 {
   @include body(1.5rem, 2.5rem);
-  @include respond-to("mobile") {
-    @include body(1.3rem, 2.3rem);
-  }
 }
