@@ -2,7 +2,7 @@
   background-color: $midnight-green;
   position: relative;
 
-  .home-banner__content {
+  &__content {
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -23,7 +23,7 @@
     }
   }
 
-  .home-banner__bg-pattern-home-2 {
+  &__bg-pattern-home-2 {
     position: absolute;
     width: 95%;
     bottom: 0;
@@ -38,22 +38,26 @@
   background-color: $sacramento-state-green;
   position: relative;
 
-  .features-section__title-contain {
-    .features-section__title-border {
-      height: 4px;
-      width: 50px;
-      background-color: $light-coral;
-      margin-bottom: 4em;
-    }
-
+  &__title-contain {
     .features-section__title {
       @include h2;
       color: $white;
       width: 12ch;
+      position: relative;
+      margin-top: 2em;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 4px;
+        width: 50px;
+        background-color: $light-coral;
+        top: -1em;
+      }
     }
   }
 
-  .features-section__list {
+  &__list {
     display: flex;
     flex-direction: column;
     margin-top: 6em;
@@ -63,7 +67,7 @@
     }
   }
 
-  .features-section__bg-pattern-home-3 {
+  &__bg-pattern-home-3 {
     position: absolute;
     width: 29%;
     height: auto;
@@ -80,14 +84,14 @@
   padding: 15em 0 10em 0;
   position: relative;
 
-  .stories-section__title {
+  &__title {
     @include h2;
     color: $white;
     text-align: center;
     width: 90%;
   }
 
-  .stories-section__list {
+  &__list {
     width: 90%;
     margin-top: 9em;
 
@@ -96,14 +100,14 @@
     }
   }
 
-  .stories-section__bg-pattern-home-4-about-3 {
+  &__bg-pattern-home-4-about-3 {
     position: absolute;
     top: 0;
     left: 0;
     width: 45%;
   }
 
-  .stories-section__bg-pattern-home-5 {
+  &__bg-pattern-home-5 {
     position: absolute;
     bottom: 0;
     right: 0;

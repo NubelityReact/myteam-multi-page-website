@@ -6,13 +6,13 @@
   position: relative;
   overflow: hidden;
 
-  .started-section__title {
+  &__title {
     @include h2;
     text-align: center;
     color: $sacramento-state-green;
   }
 
-  .started__bg-pattern-home-6-about-5 {
+  &__bg-pattern-home-6-about-5 {
     position: absolute;
     bottom: -2em;
     left: 0;
