@@ -1,0 +1,11 @@
+@use "../abstracts/mixins";
+@use "../base/typography";
+
+.cardOne {
+  @include mixins.flex;
+  gap: 23px;
+
+  &__text {
+    @include typography.h3;
+  }
+}

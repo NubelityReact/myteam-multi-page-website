@@ -1,7 +1,11 @@
+@use "../abstracts/variables" as *;
+
 html {
   font-size: 62.5%; // base font size equal to 10px
   box-sizing: border-box;
   font-family: $font-main;
+  background-color: $midnight-green;
+  overflow: hidden;
 }
 
 *,
@@ -19,7 +23,12 @@ a {
 }
 
 img {
+  display: block;
   width: 100%;
+}
+
+picture {
+  display: block;
 }
 
 ul {

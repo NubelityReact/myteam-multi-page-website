@@ -1,49 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | myteam website challenge - Contact</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Contact| myteam website challenge</title>
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <picture class="header__logo">
+        <img src="./assets/logo.svg" alt="my team's logo" />
+      </picture>
+      <nav class="navbar">
+        <ul>
+          <li><a href="./index.html">home</a></li>
+          <li><a href="./about.html">about</a></li>
+        </ul>
+        <a class="button button-primary" href="./contact.html">contact us</a>
+      </nav>
+      <picture id="burger-icon" class="icon header__burger">
+        <img src="./assets/icon-hamburger.svg" alt="menu icon" />
+      </picture>
+    </header>
 
-  home
-  about
+    <main>
+      <section class="intro">
+        <h1 class="intro__main-title">Contact</h1>
+        <h2 class="intro__secondary-title">Ask us about</h2>
 
-  contact us
+        <ul>
+          <li>
+            <div class="cardOne">
+              <picture>
+                <img src="./assets/icon-person" alt="" />
+              </picture>
+              <p class="cardOne__text">The quality of our talent network</p>
+            </div>
+          </li>
 
+          <li>
+            <div class="cardOne">
+              <picture>
+                <img src="" alt="" />
+              </picture>
+              <p class="cardOne__text">
+                Usage & implementation of our software
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="cardOne">
+              <picture>
+                <img src="" alt="" />
+              </picture>
+              <p class="cardOne__text">How we help drive innovation</p>
+            </div>
+          </li>
+        </ul>
+      </section>
 
+      <form action="#" method="post">
+        <input type="text" required placeholder="Name" />
+        <input type="email" placeholder="Email Address" />
+        <input type="text" required placeholder="Company Name" />
+        <input type="text" required placeholder="Title" />
+        <textarea cols="30" rows="10">Message</textarea>
 
-  Contact
+        <button>submit</button>
+      </form>
+    </main>
 
-  Ask us about
+    <footer class="footer">
+      <div class="footer__first-section">
+        <div class="footer__header">
+          <picture class="footer__logo">
+            <img src="./assets/logo.svg" alt="my team's logo " />
+          </picture>
+          <nav class="footer__nav nav">
+            <ul>
+              <li><a href="./index.html">home</a></li>
+              <li><a href="./about.html">about</a></li>
+            </ul>
+          </nav>
+        </div>
 
-  The quality of our talent network
-  Usage & implementation of our software
-  How we help drive innovation
+        <ul class="footer__address">
+          <li>987 Hillcrest Lane</li>
+          <li>Irvine, CA</li>
+          <li>California 92714</li>
+          <li>Call Us : 949-833-7432</li>
+        </ul>
+      </div>
 
-  Name
-  Email Address
-  Company Name
-  Title
-  Message
-
-  submit
-
-
-
-  home
-  about
-
-  987  Hillcrest Lane
-  Irvine, CA
-  California 92714
-  Call Us : 949-833-7432
-
-  Copyright 2020. All Rights Reserved
-  
-</body>
+      <div class="footer__final-section">
+        <div class="icons">
+          <a href="#">
+            <picture class="icons__img">
+              <img src="./assets/icon-facebook.svg" alt="facebook's link" />
+            </picture>
+          </a>
+          <a href="#">
+            <picture class="icons__img">
+              <img src="./assets/icon-pinterest.svg" alt="pinterest's link" />
+            </picture>
+          </a>
+          <a href="#">
+            <picture class="icons__img">
+              <img src="./assets/icon-twitter.svg" alt="twitter's link" />
+            </picture>
+          </a>
+        </div>
+        <p>Copyright 2020. All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
 </html>

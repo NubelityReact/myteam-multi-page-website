@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as *;
+@use "../base/typography";
+
+.button {
+  border-radius: 24px;
+  @include typography.body1();
+  border: 1px solid $white;
+  padding: 10px 32px;
+
+  &-primary {
+    color: $white;
+    background-color: transparent;
+
+    &:hover {
+      color: $sacramento-state-green;
+      background-color: $white;
+    }
+  }
+}

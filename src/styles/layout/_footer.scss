@@ -1,0 +1,85 @@
+@use "../abstracts/mixins";
+@use "../abstracts/breakpoints";
+@use "../abstracts//variables" as v;
+@use "../base/typography" as tp;
+
+.footer {
+  @include mixins.flex(column, 40px);
+  @include mixins.responsive-padding;
+  @include tp.body2;
+  background-color: v.$dark-green;
+  color: v.$white;
+  padding-block: 66px 64px;
+  text-align: center;
+
+  &__first-section {
+    @include mixins.flex(column, 24px);
+  }
+
+  &__header {
+    @include mixins.flex(column, 24px);
+  }
+
+  &__logo {
+    width: 96px;
+  }
+
+  &__nav ul {
+    @include mixins.flex($gap: 24px);
+  }
+
+  &__address {
+    opacity: 0.6;
+  }
+
+  &__final-section {
+    @include mixins.flex(column, 16px);
+  }
+
+  @include breakpoints.respond-to("tablet") {
+    gap: 32px;
+
+    &__first-section {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__header {
+      gap: 53px;
+      align-items: flex-start;
+    }
+
+    &__final-section {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  @include breakpoints.respond-to("desktop") {
+    flex-direction: row;
+
+    &__header {
+      gap: 25px;
+    }
+
+    &__logo {
+      width: 160px;
+    }
+
+    &__address {
+      text-align: left;
+    }
+
+    &__nav ul {
+      gap: 40px;
+    }
+
+    &__final-section {
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 51px;
+    }
+  }
+}

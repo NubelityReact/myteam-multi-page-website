@@ -10,7 +10,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="stylesheet" href="./styles/index.css" />
     <title>Frontend Mentor | myteam website challenge - Homepage</title>
   </head>
   <body>
@@ -39,16 +39,18 @@
 
         <ul>
           <li>
-            <div>
-              <img src="" alt="Icon of People with Experience" />
-            </div>
-            <div>
-              <h5>Experienced Individuals</h5>
-              <p>
-                Our network is made up of highly experienced professionals who
-                are passionate about what they do.
-              </p>
-            </div>
+            <article class="feature">
+              <div class="feature__image">
+                <img src="" alt="Icon of People with Experience" />
+              </div>
+              <div class="feature__content">
+                <h3 class="feature__title">Experienced Individuals</h3>
+                <p class="feature__description">
+                  Our network is made up of highly experienced professionals who
+                  are passionate about what they do.
+                </p>
+              </div>
+            </article>
           </li>
           <li>
             <div>
@@ -137,5 +139,49 @@
   Call Us : 949-833-7432
 
   Copyright 2020. All Rights Reserved
-  --></body>
+  -->
+    <footer class="footer">
+      <div class="footer__first-section">
+        <div class="footer__header">
+          <picture class="footer__logo">
+            <img src="./assets/logo.svg" alt="my team's logo " />
+          </picture>
+          <nav class="footer__nav nav">
+            <ul>
+              <li><a href="./index.html">home</a></li>
+              <li><a href="./about.html">about</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <ul class="footer__address">
+          <li>987 Hillcrest Lane</li>
+          <li>Irvine, CA</li>
+          <li>California 92714</li>
+          <li>Call Us : 949-833-7432</li>
+        </ul>
+      </div>
+
+      <div class="footer__final-section">
+        <div class="icons">
+          <a href="#">
+            <picture class="icons__img">
+              <img src="./assets/icon-facebook.svg" alt="facebook's link" />
+            </picture>
+          </a>
+          <a href="#">
+            <picture class="icons__img">
+              <img src="./assets/icon-pinterest.svg" alt="pinterest's link" />
+            </picture>
+          </a>
+          <a href="#">
+            <picture class="icons__img">
+              <img src="./assets/icon-twitter.svg" alt="twitter's link" />
+            </picture>
+          </a>
+        </div>
+        <p>Copyright 2020. All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
 </html>

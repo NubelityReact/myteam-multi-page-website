@@ -1,0 +1,45 @@
+@use "sass:math";
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins";
+@use "../abstracts/breakpoints";
+@use "../base/typography";
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  right: 100vw;
+  z-index: 10;
+  width: math.div(255, 375) * 100vw;
+  height: 100vh;
+  background-color: $police-blue;
+  padding: 96px 25px; // 56 + 40 from the gap
+  @include mixins.flex(column, 40px);
+  @include typography.body1;
+  color: $white;
+  background-image: url("../../assets/bg-pattern-about-1-mobile-nav-1.svg");
+  background-repeat: no-repeat;
+  background-position: right -100px bottom;
+
+  ul {
+    @include mixins.flex(column, 24px);
+  }
+
+  &--open {
+    left: calc(100vw - math.div(255, 375) * 100vw);
+    right: 0;
+  }
+
+  @include breakpoints.respond-to("tablet") {
+    position: static;
+    background: none;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    padding: 0px;
+
+    ul {
+      flex-direction: row;
+    }
+  }
+}

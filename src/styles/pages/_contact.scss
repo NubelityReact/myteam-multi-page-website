@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts//mixins";
+@use "../base/typography";
+
+.intro {
+  @include mixins.flex(column);
+  color: $white;
+
+  &__main-title {
+    @include typography.headers(4rem, 4rem);
+  }
+
+  &__secondary-title {
+    @include typography.headers(3.2rem, 4rem);
+    color: $light-coral;
+  }
+}

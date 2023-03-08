@@ -1,11 +1,21 @@
 // abstracts
-@import "./abstracts/variables";
-@import "./abstracts/mixins";
-@import "./abstracts/breakpoints";
+@forward "./abstracts/variables";
+@forward "./abstracts/mixins";
+@forward "./abstracts/breakpoints";
 
 // base
-@import "./base/base";
-@import "./base/typography";
+@forward "./base/base";
+@forward "./base/typography";
 
 //layout
-@import "./layout/footer";
+@forward "./layout/footer";
+@forward "./layout/header";
+@forward "./layout/navbar";
+
+//components
+@forward "./components/icons";
+@forward "./components/buttons";
+@forward "./components/cards";
+
+//pages
+@forward "./pages/contact";

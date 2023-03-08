@@ -1,5 +1,26 @@
-@mixin flex($direction, $gap) {
+@use "./variables" as v;
+@use "./breakpoints" as b;
+
+@mixin flex(
+  $direction: row,
+  $gap: 0px,
+  $wrap: nowrap,
+  $align: center,
+  $justify: flex-start
+) {
   display: flex;
-  flex-direction: $direction;
+  flex-flow: $direction $wrap;
+  align-items: $align;
+  justify-content: $justify;
   gap: $gap;
+}
+
+@mixin responsive-padding() {
+  padding-inline: map-get($map: v.$p-x, $key: mobile);
+  @include b.respond-to("tablet") {
+    padding-inline: map-get($map: v.$p-x, $key: tablet);
+  }
+  @include b.respond-to("desktop") {
+    padding-inline: map-get($map: v.$p-x, $key: desktop);
+  }
 }

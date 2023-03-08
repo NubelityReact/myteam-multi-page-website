@@ -1,0 +1,27 @@
+@use "../abstracts/breakpoints";
+@use "../abstracts/mixins";
+
+.header {
+  @include mixins.flex;
+  @include mixins.responsive-padding;
+  padding-block: 48px;
+  width: 100%;
+  justify-content: space-between;
+
+  &__logo {
+    width: 128px;
+  }
+
+  &__burger {
+    position: relative;
+    z-index: 100;
+
+    @include breakpoints.respond-to("tablet") {
+      display: none;
+    }
+  }
+
+  @include breakpoints.respond-to("desktop") {
+    gap: 80px;
+  }
+}
